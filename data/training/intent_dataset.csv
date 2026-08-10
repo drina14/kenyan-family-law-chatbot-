@@ -1,0 +1,101 @@
+question,intent
+Can my wife inherit land?,inheritance
+Can my husband inherit property?,inheritance
+Who inherits property after death?,inheritance
+What happens if there is no will?,inheritance
+Can children inherit land?,inheritance
+Does a widow automatically inherit the estate?,inheritance
+Can adopted children inherit from their parents?,inheritance
+Who is entitled to inherit family property?,inheritance
+How is an estate distributed among beneficiaries?,inheritance
+Can grandchildren inherit from their grandparents?,inheritance
+What are the inheritance rights of a surviving spouse?,inheritance
+Who manages a deceased person's estate?,inheritance
+Can siblings inherit property if there is no will?,inheritance
+What is the process of distributing an estate?,inheritance
+Can inheritance be challenged in court?,inheritance
+Does customary law affect inheritance rights?,inheritance
+Who receives property when someone dies intestate?,inheritance
+Can inheritance rights be revoked?,inheritance
+What documents are needed to claim an inheritance?,inheritance
+Can a beneficiary refuse an inheritance?,inheritance
+Can I file for divorce?,divorce
+How do I get a divorce?,divorce
+Can I divorce my spouse?,divorce
+What are the grounds for divorce?,divorce
+How long does divorce take?,divorce
+Can a marriage be dissolved through the court?,divorce
+What documents are required to file for divorce?,divorce
+Can my spouse refuse to grant a divorce?,divorce
+Who starts the divorce process?,divorce
+Can I remarry immediately after divorce?,divorce
+What happens to children after a divorce?,divorce
+Can I cancel a divorce case once it has started?,divorce
+What rights do I have during divorce proceedings?,divorce
+Can adultery be a reason for divorce?,divorce
+Does domestic violence affect divorce cases?,divorce
+Can a divorce be settled outside court?,divorce
+How much does it cost to file for divorce?,divorce
+Can a foreign marriage be divorced in Kenya?,divorce
+What happens if one spouse cannot be found?,divorce
+Can a divorce judgment be appealed?,divorce
+Is customary marriage recognized in Kenya?,marriage
+What is a civil marriage?,marriage
+Can I register my marriage?,marriage
+How many types of marriage exist in Kenya?,marriage
+Is my marriage valid?,marriage
+What are the legal requirements for marriage?,marriage
+Can foreigners marry in Kenya?,marriage
+What is the minimum age for marriage?,marriage
+Do I need witnesses during a marriage ceremony?,marriage
+Can two people of different religions marry?,marriage
+How do I obtain a marriage certificate?,marriage
+Can a marriage be registered after the ceremony?,marriage
+What makes a marriage legally valid?,marriage
+Can a customary marriage be converted into a civil marriage?,marriage
+Can I marry someone from another country?,marriage
+Who is allowed to officiate a marriage?,marriage
+What documents are required before marriage?,marriage
+Can a marriage certificate be replaced if lost?,marriage
+Can a marriage be declared invalid?,marriage
+Where can I register my marriage?,marriage
+Who gets custody of the child?,custody
+Can a father get custody?,custody
+How is child custody decided?,custody
+Can a mother lose custody?,custody
+Who decides child custody?,custody
+What factors determine child custody?,custody
+Can grandparents apply for custody?,custody
+Can custody arrangements be changed later?,custody
+Does the child's opinion matter in custody cases?,custody
+Can both parents share custody?,custody
+Who pays child maintenance after custody is decided?,custody
+Can custody be awarded to someone other than the parents?,custody
+What happens if one parent moves abroad?,custody
+Can custody orders be appealed?,custody
+How does the court decide what is best for the child?,custody
+Can an unmarried father obtain custody?,custody
+Can a guardian apply for custody?,custody
+Does domestic violence affect custody decisions?,custody
+Can a child live with both parents after separation?,custody
+What documents are required in a custody case?,custody
+How is matrimonial property divided?,property
+Can I claim matrimonial property?,property
+Who owns the family house?,property
+Can my spouse sell our land?,property
+What are matrimonial assets?,property
+Can property be shared after divorce?,property
+Who owns property bought before marriage?,property
+Can property be jointly owned by spouses?,property
+What happens to property after separation?,property
+Can inherited property become matrimonial property?,property
+How is jointly owned land divided?,property
+Does each spouse have equal rights to property?,property
+Can one spouse sell matrimonial property without consent?,property
+What is considered matrimonial property under Kenyan law?,property
+Can household goods be divided during divorce?,property
+Who keeps the family home after divorce?,property
+How are business assets divided between spouses?,property
+Can gifts received during marriage be shared?,property
+What happens to property acquired during marriage?,property
+Can the court determine ownership of matrimonial property?,property

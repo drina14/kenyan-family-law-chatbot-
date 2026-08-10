@@ -1,0 +1,123 @@
+[
+    {
+        "label": "LAW",
+        "pattern": "Marriage Act"
+    },
+    {
+        "label": "LAW",
+        "pattern": "Law of Succession Act"
+    },
+    {
+        "label": "LAW",
+        "pattern": "Constitution"
+    },
+
+    {
+        "label": "LEGAL_TOPIC",
+        "pattern": "marriage"
+    },
+    {
+        "label": "LEGAL_TOPIC",
+        "pattern": "divorce"
+    },
+    {
+        "label": "LEGAL_TOPIC",
+        "pattern": "inheritance"
+    },
+    {
+        "label": "LEGAL_TOPIC",
+        "pattern": "custody"
+    },
+
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "wife"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "husband"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "spouse"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "child"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "parent"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "mother"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "father"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "son"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "daughter"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "widow"
+    },
+    {
+        "label": "RELATIONSHIP",
+        "pattern": "widower"
+    },
+
+    {
+        "label": "PROPERTY",
+        "pattern": "land"
+    },
+    {
+        "label": "PROPERTY",
+        "pattern": "house"
+    },
+    {
+        "label": "PROPERTY",
+        "pattern": "property"
+    },
+    {
+        "label": "PROPERTY",
+        "pattern": "estate"
+    },
+    {
+        "label": "PROPERTY",
+        "pattern": "assets"
+    },
+
+    {
+        "label": "LEGAL_DOCUMENT",
+        "pattern": "will"
+    },
+    {
+        "label": "LEGAL_DOCUMENT",
+        "pattern": "marriage certificate"
+    },
+    {
+        "label": "LEGAL_DOCUMENT",
+        "pattern": "birth certificate"
+    },
+
+    {
+        "label": "COURT",
+        "pattern": "High Court"
+    },
+    {
+        "label": "COURT",
+        "pattern": "Magistrates Court"
+    },
+    {
+        "label": "COURT",
+        "pattern": "Kadhi Court"
+    }
+]

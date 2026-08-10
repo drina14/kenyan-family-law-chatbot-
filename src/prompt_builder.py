@@ -6,10 +6,9 @@ by combining the user's question, detected intent, entities, and retrieved legal
 
 class PromptBuilder:
 
-    @staticmethod #Declares build_prompt() as a static method.
+    @staticmethod 
     def build_prompt(question, intent, entities, retrieved_chunks):
 
-        # Build the context from retrieved chunks
         context = ""
 
         for chunk in retrieved_chunks:
@@ -22,7 +21,6 @@ class PromptBuilder:
                 f"{'-'*60}\n\n"
             )
 
-        # Format entities nicely
         entity_text = ", ".join(entities) if entities else "None"
 
         prompt = f"""

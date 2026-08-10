@@ -5,8 +5,8 @@ Reads all PDF files from data/raw/
 and extracts their text.
 """
 
-from pathlib import Path #Python's modern library for working with files and folders.
-import fitz #PyMuPDF library for working with PDF files.
+from pathlib import Path 
+import fitz 
 
 
 class PDFLoader:

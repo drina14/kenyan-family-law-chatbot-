@@ -5,12 +5,12 @@ Splits extracted PDF text into overlapping chunks
 while preserving metadata.
 """
 
-from langchain_text_splitters import RecursiveCharacterTextSplitter #from LangChain, configured for 500-character chunks with 100-character overlap.
+from langchain_text_splitters import RecursiveCharacterTextSplitter 
 
 
 class TextChunker:
 
-    def __init__(self, chunk_size=500, chunk_overlap=100): #Initializes the text splitter that divides large documents into smaller, overlapping chunks for embedding and retrieval.
+    def __init__(self, chunk_size=500, chunk_overlap=100): 
 
         self.splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
@@ -30,7 +30,7 @@ class TextChunker:
 
         chunk_id = 1
 
-        for doc in documents:  #each chunk keeps its source metadata and gets a unique chunk_id for traceability.
+        for doc in documents:  
 
             split_text = self.splitter.split_text(doc["text"])
 
@@ -47,7 +47,7 @@ class TextChunker:
 
         return chunks
 
-from pdf_loader import PDFLoader #import the PDFLoader class from the pdf_loader module.
+from pdf_loader import PDFLoader 
 
 #test
 if __name__ == "__main__":

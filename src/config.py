@@ -1,8 +1,8 @@
 #A single place that holds settings the rest of the app needs, so nothing is hardcoded twice.
 
-from pathlib import Path #library for working with files and folders.
-import os #module lets Python interact with the operating system.
-from dotenv import load_dotenv #reads .env file and loads environment variables into the program's environment.
+from pathlib import Path 
+import os 
+from dotenv import load_dotenv 
 
 load_dotenv()
 

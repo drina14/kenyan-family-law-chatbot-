@@ -12,16 +12,16 @@ class TextPreprocessor:
     def __init__(self):
         self.nlp = nlp
 
-    def clean_text(self, text: str) -> str:  #lowercases the text and strips out punctuation.
+    def clean_text(self, text: str) -> str:  
         text = text.lower()
         text = re.sub(r"[^\w\s]", "", text)
         return text
 
-    def tokenize(self, text: str):  #splits the sentence into individual words (tokens) using spaCy.
+    def tokenize(self, text: str):  
         doc = self.nlp(text)
         return [token.text for token in doc]
 
-    def remove_stopwords(self, text: str): #removes common filler words ("the," "is," "and") that don't carry meaning.
+    def remove_stopwords(self, text: str): 
         doc = self.nlp(text)
         return [
             token.text
@@ -29,14 +29,14 @@ class TextPreprocessor:
             if not token.is_stop
         ]
 
-    def lemmatize(self, text: str): #reduces words to their base or dictionary form (e.g., "running" becomes "run").
+    def lemmatize(self, text: str): 
         doc = self.nlp(text)
         return [
             token.lemma_
             for token in doc
         ]
 
-    def preprocess(self, text: str): #runs all of the above in sequence and returns everything for the intent classifier to use.
+    def preprocess(self, text: str): 
         cleaned = self.clean_text(text)
         tokens = self.tokenize(cleaned)
         filtered = self.remove_stopwords(cleaned)

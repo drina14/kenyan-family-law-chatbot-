@@ -8,20 +8,20 @@ the retrieval engine — given a question, it finds the most relevant law chunks
 """
 print("vector_store.py started")
 
-import os # import the os module for interacting with the operating system ; handling file paths.
-import pickle # library for saving and loading Python objects.
-import faiss #import the FAISS library for efficient similarity search and clustering of dense vectors.
-import numpy as np # import the numpy library for numerical operations, particularly for handling arrays and matrices.
+import os 
+import pickle 
+import faiss 
+import numpy as np 
 
-from sentence_transformers import SentenceTransformer # import the SentenceTransformer class from the sentence_transformers library to generate embeddings for text chunks.
+from sentence_transformers import SentenceTransformer 
 class VectorStore:
 
     def __init__(self):
-        self.embedding_model = SentenceTransformer("all-MiniLM-L6-v2") #loads the embedding model into memory.
+        self.embedding_model = SentenceTransformer("all-MiniLM-L6-v2") 
         self.index = None
         self.chunks = None
 
-    def build_index(self, embeddings, chunks): #builds the vector database that allows the chatbot to search legal documents efficiently.
+    def build_index(self, embeddings, chunks): 
         dimension = embeddings.shape[1]
 
         self.index = faiss.IndexFlatL2(dimension)
@@ -31,7 +31,7 @@ class VectorStore:
 
         print(f"\nIndexed {self.index.ntotal} chunks.")
 
-    def save(self):  #saves the FAISS index and the corresponding chunks to disk for later retrieval.
+    def save(self):  
         os.makedirs("data/embeddings", exist_ok=True)
 
         faiss.write_index(
@@ -44,7 +44,7 @@ class VectorStore:
 
         print("\nVector store saved.")
 
-    def load(self): #loads it back into memory so your chatbot can immediately start searching documents
+    def load(self): 
         self.index = faiss.read_index(
             "data/embeddings/faiss_index.bin"
         )
@@ -54,7 +54,7 @@ class VectorStore:
 
         print("\nVector store loaded.")
 
-    def search(self, question, top_k=5): #find the most relevant document chunks for a user's question.
+    def search(self, question, top_k=5): 
         query_embedding = self.embedding_model.encode(
             [question],
             convert_to_numpy=True
@@ -74,9 +74,9 @@ class VectorStore:
             results.append(chunk)
 
         return results
-from pdf_loader import PDFLoader #import the PDFLoader class from the pdf_loader module.
-from chunker import TextChunker #import the TextChunker class from the chunker module.
-from embeddings_generator import EmbeddingGenerator #import the EmbeddingGenerator class from the embeddings_generator module.
+from pdf_loader import PDFLoader 
+from chunker import TextChunker 
+from embeddings_generator import EmbeddingGenerator 
 
 #test
 if __name__ == "__main__":

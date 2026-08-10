@@ -5,8 +5,8 @@ Creates sentence embeddings for every chunk
 using Sentence Transformers.
 """
 
-from sentence_transformers import SentenceTransformer # import the SentenceTransformer class from the sentence_transformers library to generate embeddings for text chunks.
-import numpy as np # import the numpy library for numerical operations, particularly for handling arrays and matrices.
+from sentence_transformers import SentenceTransformer 
+import numpy as np 
 
 
 class EmbeddingGenerator:
@@ -21,7 +21,7 @@ class EmbeddingGenerator:
 
         print("Model loaded.\n")
 
-    def generate_embeddings(self, chunks): #takes all chunk texts and encodes them into vectors (arrays of numbers, 384 dimensions each).
+    def generate_embeddings(self, chunks): 
 
         texts = [chunk["text"] for chunk in chunks]
 
